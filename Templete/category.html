@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animation.css' %}">
+
+  <!-- Unicons and FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- JS Files -->
+  <script src="{% static 'js/script.js' %}" defer></script>
+  <script src="{% static 'js/animation.js' %}" defer></script>
+  <script src="{% static 'js/search.js' %}"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'images/Techxpert.png' %}" type="image/png">
+
+  <style>
+    main .skill-section a {
+      color: white;
+    }
+
+    /* Default styles for the main element */
+    main {
+      margin-top: 11%;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 767px) {
+      main {
+        margin-top: 25%;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      main {
+        margin-top: 20%;
+      }
+    }
+
+    @media screen and (min-width: 1025px) {
+      main {
+        margin-top: 11%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn" id="navOpenBtn"></i>
+        <a href="/main.html" class="logo">Tech Xpert</a>
+
+        <!-- Navbar contents -->
+        <ul class="nav-links" id="navLinks">
+            <i class="uil uil-times navCloseBtn" id="navCloseBtn"></i>
+            <li><a href="/main.html">Home</a></li>
+            <li><a href="/category.html">Categories</a></li>
+            <li><a href="/cart.html">Cart</a></li>
+        </ul>
+
+        <!-- Profile image -->
+        <div class="profile-container">
+            <a href="#" id="profileIcon">
+                <img src="{% static 'images/Techxpert.png' %}" alt="Profile Icon" class="profile-icon">
+            </a>
+            <div class="dropdown-content" id="dropdownContent">
+              <a href="/profile/student-profile.html" style="color: black; height: 14px; margin-top: -24px; padding-top: 11px; margin-bottom: 0px;">Profile</a>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class="search-box" id="searchBox"></div>
+
+  <main>
+    <center>
+      <h2 style="color: rgb(0, 0, 0);">All Types of Categories Provided to You</h2>
+    </center>
+
+    <div class="skill-section">
+      <div class="categories">
+        <a href="/courses/course-panel.html">
+          <div class="category">
+            <h3 class="web">Web Development</h3>
+            <p>13.3M+ learners</p>
+          </div>
+        </a>
+
+        <a href="/courses/course-panel.html">
+          <div class="category">
+            <h3>MERN Stack</h3>
+            <p>16.6M+ learners</p>
+          </div>
+        </a>
+
+        <a href="/courses/course-panel.html">
+          <div class="category">
+            <h3>Business Development</h3>
+            <p>7M+ learners</p>
+          </div>
+        </a>
+
+        <a href="/courses/course-panel.html">
+          <div class="category">
+            <h3>Cyber Security</h3>
+            <p>4M+ learners</p>
+          </div>
+        </a>
+
+        <a href="/courses/course-panel.html">
+          <div class="category">
+            <h3>Java</h3>
+            <p>14.4M+ learners</p>
+          </div>
+        </a>
+
+        <a href="/courses/course-panel.html">
+          <div class="category">
+            <h3>Android Development</h3>
+            <p>8M+ learners</p>
+          </div>
+        </a>
+
+        <a href="/courses/course-panel.html">
+          <div class="category">
+            <h3>iOS Development</h3>
+            <p>4M+ learners</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

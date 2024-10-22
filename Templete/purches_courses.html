@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <script src="{% static 'js/search.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/start-learning.css' %}">
+    <link rel="icon" href="{% static 'images/Techxpert.png' %}" type="image/png">
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <script src="{% static 'js/animation.js' %}" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn" id="navOpenBtn"></i>
+            <a href="/main.html" class="logo">Tech Xpert</a>
+    
+            <!-- Navbar contents -->
+            <ul class="nav-links" id="navLinks">
+                <i class="uil uil-times navCloseBtn" id="navCloseBtn"></i>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="/category.html">Categories</a></li>
+                <li><a href="/cart.html">Cart</a></li>
+            </ul>
+    
+            <!-- Profile image -->
+            <div class="profile-container">
+                <a href="#" id="profileIcon">
+                    <img src="{% static 'images/Techxpert.png' %}" alt="Profile Icon" class="profile-icon">
+                </a>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="/profile/student-profile.html">Profile</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search content results -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <div id="results" class="card-container"></div>
+        </div>
+    </div>
+    
+    <center><br><br><br>
+        <h1 style="color: black;">Start Learning with TechXpert Learning Platform</h1>
+        <h2 style="color: black;">Here's your Purchased Course</h2>
+    </center><br><br>
+
+    <!-- Courses Container -->
+    <main class="main">
+        <br>
+        <a href="/Course-play/Course-play.html">
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="https://media.istockphoto.com/id/1412282189/photo/lock-network-technology-concept.jpg?s=612x612&w=0&k=20&c=hripuxLs9pS_7Ln6YWQR-Ow2_-BU5RdQ4vOY8s1q1iQ="
+                        alt="Course Image">
+                </div>
+                <div class="item-details">
+                    <h3><b>Learn Ethical Hacking From Scratch 2024</b></h3>
+                    <p class="p1">By Zaid Sabih and 1 other</p>
+                    <p class="p2">• All Levels</p>
+                </div>
+                <button class="Play"><b>Play</b></button>
+            </div>
+        </a>
+    </main>
+
+    <main class="main">
+        <br>
+        <a href="/Course-play/Course-play.html">
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="https://media.istockphoto.com/id/1412282189/photo/lock-network-technology-concept.jpg?s=612x612&w=0&k=20&c=hripuxLs9pS_7Ln6YWQR-Ow2_-BU5RdQ4vOY8s1q1iQ="
+                        alt="Course Image">
+                </div>
+                <div class="item-details">
+                    <h3><b>Learn Ethical Hacking From Scratch 2024</b></h3>
+                    <p class="p1">By Zaid Sabih and 1 other</p>
+                    <p class="p2">• All Levels</p>
+                </div>
+                <button class="Play"><b>Play</b></button>
+            </div>
+        </a>
+    </main>
+
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+</body>
+
+</html>

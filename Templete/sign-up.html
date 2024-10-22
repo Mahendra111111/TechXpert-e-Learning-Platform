@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Source Codes By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Xpert</title>
+  
+  <!-- Load static files in Django -->
+  {% load static %}
+  
+  <link rel="icon" href="{% static 'images/Techxpert.png' %}" type="image/png"> <!-- Use Django's static tag -->
+  <link rel="stylesheet" href="{% static 'css/sign-up.css' %}"> <!-- Use Django's static tag -->
+</head>
+
+<body>
+  <div class="login_form">
+    <!-- Login form container -->
+    <form action="{% url 'your_view_name' %}" method="post"> <!-- Update with your view name and POST method -->
+      {% csrf_token %} <!-- Include CSRF token for security -->
+      
+      <h3>Sign in</h3>
+      <h3>To get in the world of Tech Xpert</h3>
+      <div class="login_option">
+        <!-- Google button -->
+        <div class="option">
+          <a href="#">
+            <img src="{% static 'images/google.png' %}" alt="Google Sign In"> <!-- Use Django's static tag -->
+          </a>
+        </div>
+
+        <!-- Facebook button -->
+        <div class="option">
+          <a href="#">
+            <img src="{% static 'images/facebook.png' %}" alt="Facebook Sign In"> <!-- Use Django's static tag -->
+          </a>
+        </div>
+
+        <!-- GitHub button -->
+        <div class="option">
+          <a href="#">
+            <img src="{% static 'images/github.png' %}" alt="GitHub Sign In"> <!-- Use Django's static tag -->
+          </a>
+        </div>
+
+        <!-- Apple button -->
+        <div class="option">
+          <a href="#">
+            <img src="{% static 'images/apple.png' %}" alt="Apple Sign In"> <!-- Use Django's static tag -->
+          </a>
+        </div>
+      </div>
+
+      <!-- Login option separator -->
+      <p class="separator">
+        <span>or</span>
+      </p>
+
+      <!-- Username input box -->
+      <div class="input_box">
+        <label for="username">Username</label> <!-- Updated id for consistency -->
+        <input type="text" id="username" name="username" placeholder="Username" required /> <!-- Added name attribute -->
+      </div>
+
+      <!-- Email input box -->
+      <div class="input_box">
+        <div class="text">
+          <label for="email">Email</label> <!-- Updated id for consistency -->
+        </div>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required /> <!-- Added name attribute -->
+      </div>
+
+      <!-- Create password input box -->
+      <div class="input_box">
+        <div class="text">
+          <label for="password">Password</label>
+        </div>
+        <input type="password" id="password" name="password" placeholder="Create Password" required /> <!-- Added name attribute -->
+      </div>
+
+      <!-- Login button -->
+      <button type="submit">Sign up</button>
+      <p class="sign_up">Already have an account? <a href="{% url 'login' %}">Log in</a></p> <!-- Updated with Django's url tag -->
+      <br>
+    </form>
+  </div>
+  <br>
+</body>
+
+</html>

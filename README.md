@@ -1,2 +1,2 @@
-# TechXpert-e-Learning-Platform <br>
- [Click](https://tech-xpert-e-learning-platform-juzyram5o.vercel.app) here.
+<h1>TechXpert-e-Learning-Platform <h1><br>
+ This project is created  using HTML, CSS, and JavaScript and made in Django framework. It is a simple e-learning platform where users can register and buy courses . The courses are displayed in a grid layout and users can filter them by category.

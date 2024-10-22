@@ -1,0 +1,220 @@
+<!DOCTYPE html data-theme="light">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Xpert</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animation.css' %}">
+    
+    <link rel="icon" href="{% static 'images/Techxpert.png' %}" type="image/png">
+    
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <style>
+        .btn-login {
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <!-- Uncomment this section if you want to include a loader
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    -->
+
+    <!-- Navbar container -->
+    <header>
+        <nav class="nav">
+            <a href="#" class="logo">Tech Xpert</a>
+            <!-- Navbar contents -->
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a href="{% url 'support' %}" style="color:#ffffff;">Support</a></li>
+                <li><a href="{% url 'about' %}" style="color:#ffffff;">About Us</a></li>
+                <li><a href="{% url 'contact' %}" style="color:#ffffff;">Contact</a></li>
+            </ul>
+            <a href="{% url 'sign_up' %}" id="login-Icon">
+                <button class="btn-login">Sign Up</button>
+            </a>
+        </nav>
+    </header><br>
+
+    <!-- Search content results -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <div id="results" class="card-container"></div>
+        </div>
+    </div>
+    <!-- End search content result -->
+
+    <!-- Main -->
+    <main>
+        <section class="header">
+            <div class="overlay">
+                <div class="left">
+                    <h1 style="margin-bottom: -7px;">Unlock Your Teaching Potential with <h3><i style="color: rgb(255, 225, 0)">Tech Xpert</i></h3></h1>
+                    <br>
+                    <p class="desc">
+                        Tech Xpert offers a comprehensive range of <br>online courses designed to empower educators and students.
+                    </p>
+                    <a href="#read-more">
+                        <button class="button">Learn More</button>
+                    </a>
+                </div>
+                <div class="right">
+                    <img src="{% static 'images/Techxpert.png' %}" alt="Techxpert Image" />
+                </div>
+            </div>
+        </section><br><br><br>
+
+        <div id="read-more"></div>
+        <section class="skill-section">
+            <h1 style="margin-left: 366px;">All skills you need in one place</h1>
+            <p class="desc" style="margin-top: -42px; margin-left: 124px;"><br>
+                From critical skills to technical topics, Tech Xpert supports your professional development.
+            </p>
+
+            <!-- Category -->
+            <div class="categories">
+                <div class="category">
+                    <h3 class="web">Web Development</h3>
+                    <p>13.3M+ learners</p>
+                </div>
+                <div class="category">
+                    <h3>MERN Stack</h3>
+                    <p>16.6M+ learners</p>
+                </div>
+                <div class="category">
+                    <h3>Software Development</h3>
+                    <p>7M+ learners</p>
+                </div>
+                <div class="category">
+                    <h3>Cyber Security</h3>
+                    <p>4M+ learners</p>
+                </div>
+                <div class="category">
+                    <h3>Java</h3>
+                    <p>14.4M+ learners</p>
+                </div>
+                <div class="category">
+                    <h3>Android Development</h3>
+                    <p>8M+ learners</p>
+                </div>
+                <div class="category">
+                    <h3>iOS Development</h3>
+                    <p>4M+ learners</p>
+                </div>
+            </div><br><br><br><br><br><br>
+
+        </section>
+
+        <!-- Banners -->
+        <div class="banner">
+            <center>
+                <h1>This Company is Supported as</h1>
+            </center><br><br>
+            <h2>Trusted by over 15,000 companies and millions of learners around the world</h2>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="Google">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/020/336/289/small_2x/samsung-logo-samsung-icon-free-free-vector.jpg" alt="Samsung">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" alt="Wipro">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="Infosys">
+                <img src="https://cdn.freebiesupply.com/images/large/2x/sony-logo-black-and-white.png" alt="Sony">
+                <img src="https://logodix.com/logo/995526.png" alt="Apple">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Microsoft_logo_-_2012_%28vertical%29.svg/1910px-Microsoft_logo_-_2012_%28vertical%29.svg.png" alt="Microsoft">
+                <img src="https://caproasia.com/wp-content/uploads/2015/07/Blackrock-Logo-Thumbnail.jpg" alt="BlackRock">
+            </div>
+        </div><br><br><br><br>
+
+        <section>
+            <div class="container-goals">
+                <h1>Learning focused on your goals</h1><br><br>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">✍️</div>
+                        <h2>Hands-on training</h2>
+                        <p>Upskill effectively with AI-powered coding exercises, practice tests, skills assessments, labs, and workspaces.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📜</div>
+                        <h2>Certification preparation</h2>
+                        <p>Prep for industry-recognized certifications by solving real-world challenges and earn badges along the way.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📈</div>
+                        <h2>Insights and analytics <span class="enterprise">Enterprise Plan</span></h2>
+                        <p>Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective learning.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🛠️</div>
+                        <h2>Customizable content <span class="enterprise">Enterprise Plan</span></h2>
+                        <p>Create tailored learning paths for team and organization goals and even host your own content and resources.</p>
+                    </div>
+                </div>
+            </div>
+        </section><br><br><br><br><br>
+
+        <div class="container-upskill">
+            <div class="text-content">
+                <h1>Booz | Allen | Hamilton</h1>
+                <h2>Booz Allen Hamilton Unlocks Talent Retention and Productivity Through Upskilling</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>90%</h3>
+                        <p>retention rate among participating employees</p>
+                    </div>
+                    <div class="stat">
+                        <h3>55%</h3>
+                        <p>of learners noted a positive impact on their productivity</p>
+                    </div>
+                </div>
+                <a href="{% url 'sign_up' %}" class="read-more">Start Course Today</a>
+            </div>
+            <div class="image-content">
+                <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/61ded9e2811f9930db550b67_shutterstock_1517844719-business%20(1).jpg" alt="Booz Allen Hamilton Image">
+            </div>
+        </div>
+
+        <section>
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <ul>
+                            <li><a href="{% url 'contact' %}">Contact us</a></li>
+                            <li><a href="{% url 'services' %}">Our Services</a></li>
+                            <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+                            <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                            <li><a href="{% url 'career' %}">Career</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        Tech Xpert Copyright © 2024 - All rights reserved || <br><br> Developed By : Yash Kapure / Yash Bhavsar / Mahendra Nagpure
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <script src="{% static 'js/animation.js' %}" defer></script>
+    <script src="{% static 'js/index.js' %}" defer></script>
+</body>
+
+</html>

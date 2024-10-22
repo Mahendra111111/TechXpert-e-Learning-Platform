@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <!-- External CSS for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'images/Techxpert.png' %}" type="image/png">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+        body {
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: Poppins;
+            margin: 0;
+            padding: 0;
+        }
+
+        .button {
+            background: #949494;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 12px;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        header {
+            margin: 10% 2% 0 2%;
+        }
+
+        main {
+            margin: -30% 2% 0 2%;
+        }
+
+        .main-video-container .main-video {
+            float: right;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .rating {
+            text-align: left;
+            margin-top: 5%;
+        }
+
+        .course-details {
+            text-align: left;
+            padding: 0 15%;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 918px;
+            height: 434px;
+            margin-bottom: -118px;
+            border-radius: 21px;
+            margin-left: 0px;
+            margin-top: -71px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                margin: 5% 2% 0 2%;
+            }
+
+            .button {
+                padding: 10px 15px;
+            }
+
+            .course-details {
+                padding: 0 5%;
+            }
+
+            main {
+                margin: -25% 2% 0 2%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .button {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .course-details {
+                padding: 0 2%;
+            }
+
+            iframe {
+                height: 200px;
+            }
+
+            main {
+                margin: -15% 2% 0 2%;
+            }
+        }
+
+        /* Checkbox Styles */
+        .checkbox-container {
+            padding: 50px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .task {
+            padding: 50px;
+            margin-top: -48px;
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
+            transform: scale(1.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: -16px;
+            margin-left: 32px;
+            margin-right: 0px;
+        }
+
+        .checkbox-container input:checked {
+            transform: scale(1.8);
+            filter: hue-rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="back">
+        <button class="button"><a href="/purches_course/purches_courses.html">Back</a></button>
+    </div>
+    <br>
+    <div class="container">
+        <center>
+            <iframe width="560" height="315" class="main-video" src="https://www.youtube.com/embed/OKuiyX5k6zg?si=Yo0BR1NMmtQ_rhqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </center>
+        <div class="main-video-container">
+            <p class="right" style="text-align: right; margin-top: 10px;">
+            <header>
+                <center><h1>Python Programming Course<small> <i>Beginner to Advance</i></small></h1></center>
+            </header>
+
+            <main>
+                <span class="course-details">
+                    <p style="margin-top: 28%;"><b>Learn Python, a powerful and beginner-friendly programming language. This course covers core topics like variables, control flow, functions, and basic object-oriented programming. You'll also explore Python's libraries and tools for automation, web development, and data analysis.</b></p>
+                </span><br>
+
+                <span class="rating">
+                    <p style="margin-top: -468px;">
+                        <span class="fa fa-star checked" style="color: rgb(140, 255, 0);"></span>
+                        <span class="fa fa-star checked" style="color: rgb(140, 255, 0);"></span>
+                        <span class="fa fa-star checked" style="color: rgb(140, 255, 0);"></span>
+                        <span class="fa fa-star" style="color: rgb(140, 255, 0);"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <p style="margin-top: -1%; margin-left: 0%;">(271,730 ratings)</p>
+                    <p style="margin-left: 0%;">1,222,240 students</p>
+                </span>
+
+                <!-- Checkbox to confirm course completion -->
+                <div class="checkbox-container">
+                    <input type="checkbox" id="courseComplete" style="margin-left: 1129px; color:#000;">
+                    <label for="courseComplete" style="margin-left: -88px;">Course <br>completed</label>
+                </div>
+            </main><br>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

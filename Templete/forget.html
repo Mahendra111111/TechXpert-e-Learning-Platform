@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Xpert</title>
+    
+    {% load static %}
+    <link rel="icon" href="{% static 'images/Techxpert.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <style>
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login_form">
+        <!-- Login form container -->
+        <form action="#" method="post">
+            {% csrf_token %}
+            <h3>Email Address Verification</h3><br>
+            <!-- Email input box -->
+            <div class="input_box">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required />
+            </div>
+
+            <button type="submit">Verification</button><br>
+        </form>
+    </div><br>
+</body>
+
+</html>
